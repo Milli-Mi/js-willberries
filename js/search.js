@@ -4,9 +4,12 @@ const search = function () {
   const searchBtn = document.querySelector('.search-block > button');
   // console.log(input)
   // console.log(searchBtn);
-  input.addEventListener('input',  (event) => {
-    // console.log('ввод);
-    console.log(event.target.value);
+  // input.addEventListener('input',  (event) => {
+  //   // console.log('ввод);
+  //   console.log(event.target.value);
+  // })
+  searchBtn.addEventListener('click', () => {
+    console.log(input.value)
   })
 }
 search();
