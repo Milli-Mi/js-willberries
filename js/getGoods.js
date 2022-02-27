@@ -6,7 +6,8 @@ const getGoods = () => {
       .then((res) => res.json())
 
       .then((data) => {
-        console.log(data)
+        // console.log(data)
+        localStorage.setItem('goods', JSON.stringify(data))
       })
   }
 
